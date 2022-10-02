@@ -7,6 +7,20 @@ const { logger } = require('./middleware/logEvents');
 const errorHandler = require('./middleware/errorHandler');
 const PORT = process.env.PORT || 3000;
 
+const { Sequelize } = require('sequelize');
+
+const sequelize = new Sequelize('smarket', 'root', '', {
+  host: 'localhost',
+  dialect: 'mysql'
+});
+
+try {
+    sequelize.authenticate();
+    console.log('Sequelize: Connection has been established successfully.');
+  } catch (error) {
+    console.error('Sequelize: Unable to connect to the database:', error);
+  }
+
 // custom middleware logger
 app.use(logger);
 
@@ -39,4 +53,4 @@ app.all('*', (req, res) => {
 
 app.use(errorHandler);
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Node: Server running on port ${PORT}`));
