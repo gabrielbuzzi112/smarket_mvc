@@ -1,0 +1,3 @@
+https://www.digitalocean.com/community/tutorials/how-to-use-sequelize-with-node-js-and-mysql
+
+https://rapidapi.com/guides/http-status-code?utm_source=google&utm_medium=cpc&utm_campaign=DSA&gclid=CjwKCAjw7eSZBhB8EiwA60kCW0bIxeyzTi0hl8QFMGXeYO_rz2rFyZ05pxOLWiLbtWNl6J7pr9V5VxoCizsQAvD_BwE

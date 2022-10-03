@@ -10,3 +10,6 @@
 20221002	18:59:16	0b62bff1-9018-43da-bd94-bdd8d57ec1bc	TypeError: Cliente.findAll is not a function
 20221002	20:31:24	3c912634-130e-4a8f-9c0b-adca36ac16f1	TypeError: sequelize.sync is not a function
 20221002	20:31:54	a578c85b-15eb-4338-8486-77b4743ef2e1	TypeError: Cannot read properties of undefined (reading 'sync')
+20221002	21:36:12	137597d2-cbc4-42ed-b347-60db6f9ac859	TypeError: Cannot read properties of undefined (reading 'sync')
+20221002	21:38:49	b570a1b7-be9c-4abb-a81f-ab48ae24e7f3	TypeError: Cannot read properties of undefined (reading 'sync')
+20221002	21:39:19	45b3c6ca-80f3-445f-8c55-2dd5edede497	TypeError: Cannot read properties of undefined (reading 'sync')

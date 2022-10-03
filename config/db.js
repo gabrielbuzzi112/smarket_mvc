@@ -17,5 +17,6 @@ sequelize.authenticate().then(() => {
 });
 
 module.exports = {
-    sequelize
+    sequelize,
+    DataTypes
 }

@@ -1,5 +1,4 @@
-const {sequelize} = require('../config/db.js');
-const {DataTypes} = require("sequelize");
+const {sequelize, DataTypes} = require('../config/db.js');
 
 const Cliente = sequelize.define("cliente", {
    nome: {
@@ -14,4 +13,8 @@ sequelize.sync().then(() => {
    console.error('Unable to create table : ', error);
 });
 
-module.exports.Cliente;
+module.exports = {
+   sequelize,
+   Cliente,
+   DataTypes
+}
