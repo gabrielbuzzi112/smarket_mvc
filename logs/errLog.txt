@@ -1,0 +1,12 @@
+20221002	10:01:07	e97f2977-1fb5-438c-85e3-8239a0c02dfa	ReferenceError: path is not defined
+20221002	10:01:29	0f1034db-d7ac-4728-9800-affac089daa8	ReferenceError: path is not defined
+20221002	10:02:01	067ead19-4f54-4022-bd64-c542ba7a5461	ReferenceError: path is not defined
+20221002	10:14:34	f93a8de1-cfd6-42de-8b8c-70078f8c03aa	ReferenceError: path is not defined
+20221002	10:21:14	269344f5-01c1-4f7f-b93e-5941c8416bfd	ReferenceError: path is not defined
+20221002	10:21:29	607ae0c1-b52d-458e-b1fd-7cffec026259	ReferenceError: path is not defined
+20221002	10:38:03	257e50d4-4259-4037-8b3c-cec0f2cfc2f0	ReferenceError: path is not defined
+20221002	10:44:49	7e6b4987-1741-4b0e-90a5-808b76dc91ea	ReferenceError: path is not defined
+20221002	10:46:27	b7513922-ea26-443f-a023-496c2020887f	ReferenceError: path is not defined
+20221002	18:59:16	0b62bff1-9018-43da-bd94-bdd8d57ec1bc	TypeError: Cliente.findAll is not a function
+20221002	20:31:24	3c912634-130e-4a8f-9c0b-adca36ac16f1	TypeError: sequelize.sync is not a function
+20221002	20:31:54	a578c85b-15eb-4338-8486-77b4743ef2e1	TypeError: Cannot read properties of undefined (reading 'sync')

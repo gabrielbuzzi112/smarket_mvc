@@ -1,11 +1,36 @@
-//Chama a model
-//const model = require('../models');
+const {sequelize} = require('../models/clientes.model.js');
 
 const listar = (req, res) => {
+    
+    sequelize.sync().then(() => {
+
+        Cliente.findAll().then(lista => {
+            res.status(200).json(lista);
+        }).catch((error) => {
+            console.error('Failed to retrieve data : ', error);
+        });
+    
+    }).catch((error) => {
+        console.error('Unable to create table : ', error);
+    });
+    
     //pede pra model todos os clientes no
 }
 
 const criar = (req, res) => {
+    sequelize.sync().then(() => {
+        console.log('Book table created successfully!');
+        Cliente.create({
+             nome: req.body.nome
+         }).then(res => {
+             console.log(res)
+         }).catch((error) => {
+             console.error('Failed to create a new record : ', error);
+         });
+     }).catch((error) => {
+        console.error('Unable to create table : ', error);
+     });
+    
     //Dados que vem do corpo da requisição
     /*
     const dados = {

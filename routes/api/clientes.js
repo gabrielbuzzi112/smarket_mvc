@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const employeesController = require('../../controllers/clientesController');
+
+const clientesController = require('../../controllers/clientesController');
 
 router.route('/')
     .get(clientesController.listar)
@@ -9,6 +10,6 @@ router.route('/')
     .delete(clientesController.remover);
 
 router.route('/:id')
-    .get(employeesController.buscar);
+    .get(clientesController.buscar);
 
 module.exports = router;
