@@ -1,0 +1,15 @@
+extends layout/layout.pug
+
+block content 
+    table(class="table")
+        thead  
+            tr 
+                th ID
+                th Nome 
+        tbody 
+            each elem,i in data
+                tr
+                    td !{elem.id}
+                    td !{elem.nome}
+            
+        

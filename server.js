@@ -7,24 +7,6 @@ const { logger } = require('./middleware/logEvents');
 const errorHandler = require('./middleware/errorHandler');
 const PORT = process.env.PORT || 3000;
 
-const Sequelize = require("sequelize");
-
-const sequelize = new Sequelize(
-   'smarket',
-   'root',
-   '',
-    {
-      host: 'localhost',
-      dialect: 'mysql'
-    }
-  );
-
-sequelize.authenticate().then(() => {
-   console.log('Connection has been established successfully.');
-}).catch((error) => {
-   console.error('Unable to connect to the database: ', error);
-});
-
 // custom middleware logger
 app.use(logger);
 
@@ -43,7 +25,6 @@ app.use('/', express.static(path.join(__dirname, '/public')));
 // routes
 app.use('/', require('./routes/root'));
 app.use('/clientes', require('./routes/clientes'));
-app.use('/api/clientes', require('./routes/api/clientes'));
 
 app.all('*', (req, res) => {
     res.status(404);

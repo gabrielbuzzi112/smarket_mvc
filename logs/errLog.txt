@@ -13,3 +13,88 @@
 20221002	21:36:12	137597d2-cbc4-42ed-b347-60db6f9ac859	TypeError: Cannot read properties of undefined (reading 'sync')
 20221002	21:38:49	b570a1b7-be9c-4abb-a81f-ab48ae24e7f3	TypeError: Cannot read properties of undefined (reading 'sync')
 20221002	21:39:19	45b3c6ca-80f3-445f-8c55-2dd5edede497	TypeError: Cannot read properties of undefined (reading 'sync')
+20221003	15:15:08	bf47e325-f8d3-4e20-8c76-fc56c60d078f	Error: No default engine was specified and no extension was provided.
+20221003	15:30:47	1d758e21-ca27-4b30-8758-2f8c964bda18	Error: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\index.pug:6:5
+
+meta is a self closing element: <meta/> but contains nested content.
+20221003	15:30:48	4e53172f-a43c-47bd-acb5-a7406d9f642c	Error: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\index.pug:6:5
+
+meta is a self closing element: <meta/> but contains nested content.
+20221003	16:04:53	1e7efbfe-a869-483a-9dff-31742b8bec11	Error: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\cliente\listar.pug:5:23
+    3|     p !{elem.id}-!{elem.nome}
+    4| 
+  > 5| table(class="table")= 
+-----------------------------^
+    6|     thead  
+    7|         tr 
+    8|             td ID
+
+Syntax Error: Unexpected token
+20221003	16:05:19	c29bfddb-effa-4d0b-971b-c7ae74b3cd0b	Error: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\cliente\listar.pug:1:23
+  > 1| table(class="table")= 
+-----------------------------^
+    2|     thead  
+    3|         tr 
+    4|             td ID
+
+Syntax Error: Unexpected token
+20221003	16:05:40	1bed49d9-b7d0-41c0-8b12-52b260e11c6d	Error: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\cliente\listar.pug:8:23
+    6|     tbody 
+    7|         each elem,i in data
+  > 8|             td= !{elem.id}
+-----------------------------^
+    9|             td= !{elem.nome}
+    10|         
+
+Syntax Error: Unexpected token
+20221003	16:06:38	0db93b70-a3c1-47cb-991c-ea21b4b8df72	Error: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\cliente\listar.pug:5:23
+    3|     p !{elem.id}-!{elem.nome}
+    4| 
+  > 5| table(class="table")= 
+-----------------------------^
+    6|     thead  
+    7|         tr 
+    8|             td ID
+
+Syntax Error: Unexpected token
+20221003	16:06:49	cb251814-217a-429e-9ea5-c3119ed76888	TypeError: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\cliente\listar.pug:3
+    1| 
+    2| //each elem,i in data
+  > 3|     p !{elem.id}-!{elem.nome}
+    4| 
+    5| table(class="table")
+    6|     thead  
+
+Cannot read properties of undefined (reading 'id')
+20221003	16:19:39	01d00600-ba1c-419d-9ae5-85f5ed3fe92e	Error: Failed to lookup view "../views/listar.pug" in views directory "C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views"
+20221003	16:41:07	c5ce17f2-0bba-47c7-ba8a-b6f8c3ee71dd	Error: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\layout.pug:11:26
+    9|     style 
+    10|       footer {
+  > 11|           position: fixed;
+---------------------------------^
+    12|           height: 100px;
+    13|           bottom: 0;
+    14|           width: 100%;
+
+unexpected text ";
+   "
+20221003	16:41:08	2c13e728-c67e-4003-8905-ce90fd113791	Error: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\layout.pug:11:26
+    9|     style 
+    10|       footer {
+  > 11|           position: fixed;
+---------------------------------^
+    12|           height: 100px;
+    13|           bottom: 0;
+    14|           width: 100%;
+
+unexpected text ";
+   "
+20221003	16:52:07	17c01ce3-f697-41cc-b73c-cfc348d816ba	Error: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\cliente\listar.pug:3:1
+
+Unexpected block content
+20221003	17:04:33	8226204f-2ca7-45ef-97ee-dd55c4a2bad5	Error: ENOENT: no such file or directory, open 'C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\layout.css'
+    at C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\layout.pug line 10
+20221003	17:20:30	0500d6bd-cd27-4bda-9c6a-fb7a78674bf7	ReferenceError: data is not defined
+20221003	17:21:01	a9b5607e-b236-46d6-b8c1-ea86d8ba41b5	ReferenceError: data is not defined
+20221003	17:22:33	f1099a06-8940-4814-bf30-8373c72b8997	ReferenceError: data is not defined
+20221003	17:22:50	fa3c5a9d-a4a2-4ed5-b893-a7b034abf8f6	ReferenceError: data is not defined
