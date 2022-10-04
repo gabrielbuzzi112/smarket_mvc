@@ -98,3 +98,41 @@ Unexpected block content
 20221003	17:21:01	a9b5607e-b236-46d6-b8c1-ea86d8ba41b5	ReferenceError: data is not defined
 20221003	17:22:33	f1099a06-8940-4814-bf30-8373c72b8997	ReferenceError: data is not defined
 20221003	17:22:50	fa3c5a9d-a4a2-4ed5-b893-a7b034abf8f6	ReferenceError: data is not defined
+20221003	21:58:50	7d198eaa-88ee-4c16-a121-7850e5304e41	TypeError: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\cliente\listar.pug:10
+    8|                 th Nome 
+    9|         tbody 
+  > 10|             each cliente in clientes
+    11|                 tr
+    12|                     td !{cliente.id}
+    13|                     td !{cliente.nome}
+
+Cannot read properties of undefined (reading 'length')
+20221003	21:59:01	d2c43593-131a-4f73-ab29-f77bf7475a36	TypeError: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\cliente\listar.pug:10
+    8|                 th Nome 
+    9|         tbody 
+  > 10|             each cliente in clientes
+    11|                 tr
+    12|                     td !{cliente.id}
+    13|                     td !{cliente.nome}
+
+Cannot read properties of undefined (reading 'length')
+20221003	21:59:22	c51bb17e-a5f6-4c0e-a35b-7dfa0e4ee749	TypeError: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\cliente\listar.pug:10
+    8|                 th Nome 
+    9|         tbody 
+  > 10|             each cliente in clientes
+    11|                 tr
+    12|                     td !{cliente.id}
+    13|                     td !{cliente.nome}
+
+Cannot read properties of undefined (reading 'length')
+20221003	23:13:45	d3282c9d-b7d9-4fdb-ba40-22b8ecadca5f	ReferenceError: sequelize is not defined
+20221003	23:27:59	76cbe4e7-9025-4e7b-9fa7-c0658884c70e	Error: Failed to lookup view "../views/cliente/login.pug" in views directory "C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views"
+20221003	23:28:34	18fbdbdf-e310-4da4-ac9f-ff8fe92a2700	Error: Failed to lookup view "../views/cliente/login.pug" in views directory "C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views"
+20221003	23:28:47	1a50db1c-fe67-4744-95c1-5702dcae3804	Error: Failed to lookup view "../views/cliente/login.pug" in views directory "C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views"
+20221004	00:33:06	9547b4bd-7b24-47a5-8a25-388fbc0a0a23	Error: ENOENT: no such file or directory, open 'C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\layout\layout.pug'
+    at C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\cadastro.pug line 1
+20221004	01:14:52	8482aecc-b4f3-4861-9ea4-f265b888e828	ReferenceError: bcrypt is not defined
+20221004	01:16:09	59abb360-5732-4f0d-869c-4e74ac281987	Error: Illegal arguments: string, undefined
+20221004	01:23:58	fe44a91c-fb2b-4884-b697-75d81b443036	ReferenceError: Cannot access 'usuario' before initialization
+20221004	01:31:17	24de23a9-eb1b-4293-a191-0626b85a62c9	ReferenceError: email is not defined
+20221004	01:31:23	8f3039be-3f26-4694-aba8-55955cda9d37	ReferenceError: email is not defined

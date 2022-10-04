@@ -6,10 +6,12 @@ block content
             tr 
                 th ID
                 th Nome 
+                th Email
         tbody 
-            each elem,i in data
+            each cliente in clientes
                 tr
-                    td !{elem.id}
-                    td !{elem.nome}
+                    td !{cliente.id}
+                    td !{cliente.nome}
+                    td !{cliente.email}
             
         

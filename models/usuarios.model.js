@@ -1,22 +1,28 @@
 const {sequelize, DataTypes} = require('../config/db.js');
 
-const {Usuario} = require('./usuarios.model');
-
-const Cliente = sequelize.define("clientes", {
-   endereco: {
+const Usuario = sequelize.define("usuarios", {
+   nome: {
      type: DataTypes.STRING,
      allowNull: false
+   },
+   email: {
+      type: DataTypes.STRING,
+      allowNull: false
+   },
+   senha: {
+      type: DataTypes.STRING,
+      allowNull: false
    }
-}).belongsTo(Usuario);
+});
 
 sequelize.sync().then(() => {
-   console.log('Tabela de cleintes criada com sucesso!');
+   console.log('Tabela de usuarios criada com sucesso!');
 }).catch((error) => {
    console.error('Unable to create table : ', error);
 });
 
 module.exports = {
    sequelize,
-   Cliente,
+   Usuario,
    DataTypes
 }

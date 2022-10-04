@@ -1,30 +1,50 @@
+const PORT = process.env.PORT || 3000;
 const express = require('express');
-const app = express();
 const path = require('path');
 const cors = require('cors');
 const corsOptions = require('./config/corsOptions');
 const { logger } = require('./middleware/logEvents');
 const errorHandler = require('./middleware/errorHandler');
-const PORT = process.env.PORT || 3000;
+const cookieParser = require('cookie-parser');
 
-// custom middleware logger
+const passport = require('passport');
+const session = require('express-session');
+require('./auth')(passport);
+
+
+const app = express();
+
+function authenticationMiddleware(req, res, next) {
+    if(req.isAuthenticated()) return next();
+    res.redirect('/login');
+}
+
+
 app.use(logger);
-
-// Cross Origin Resource Sharing
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, '/public')));
 app.use(cors(corsOptions));
 
-// built-in middleware to handle urlencoded form data
-app.use(express.urlencoded({ extended: false }));
+app.use(session({
+    secret: '123', //Colocar em variavel de ambiente
+    resave: false,
+    saveUninitialized: false,
+    cookie: {maxAge: 2*60*1000} //2*60*1000 = 2 minutos 30*60*1000 = 30 minutos
+})); 
 
-// built-in middleware for json 
-app.use(express.json());
-
-//serve static files
-app.use('/', express.static(path.join(__dirname, '/public')));
+app.use(passport.initialize());
+app.use(passport.session());
 
 // routes
-app.use('/', require('./routes/root'));
-app.use('/clientes', require('./routes/clientes'));
+app.use('/cadastro', require('./routes/cadastro'));
+app.use('/login', require('./routes/login'));
+
+
+app.use('/clientes', authenticationMiddleware, require('./routes/clientes'));
+app.use('/', authenticationMiddleware, require('./routes/root'));
+
 
 app.all('*', (req, res) => {
     res.status(404);

@@ -1,0 +1,16 @@
+//extends layout/layout.pug
+
+block content 
+    
+    if mensagem!=""
+        div.alert.alert-success= mensagem
+
+    form(action="http://localhost:3000/login" method="post")
+        .mb-3
+            label.form-label(for='email') Email
+            input#email.form-control(type='email' name="email")
+        .mb-3
+            label.form-label(for='senha') Senha
+            input#senha.form-control(type='password' name="senha")
+        div.d-grid
+            button.btn.btn-success(type='submit') Entrar
