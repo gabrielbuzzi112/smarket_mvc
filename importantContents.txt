@@ -1,3 +1,6 @@
 https://www.digitalocean.com/community/tutorials/how-to-use-sequelize-with-node-js-and-mysql
 
 https://rapidapi.com/guides/http-status-code?utm_source=google&utm_medium=cpc&utm_campaign=DSA&gclid=CjwKCAjw7eSZBhB8EiwA60kCW0bIxeyzTi0hl8QFMGXeYO_rz2rFyZ05pxOLWiLbtWNl6J7pr9V5VxoCizsQAvD_BwE
+
+
+https://stytch.com/?utm_source=google&utm_medium=paid_search&utm_campaign=Search-Nonbrand-tCPA-US&adgroup=142652730684&utm_term=node%20express%20user%20authentication&utm_content=kwd-1636974147504&creative=620457908846&device=c&matchtype=b&location=9074204&gclid=Cj0KCQjwkOqZBhDNARIsAACsbfLsmetm10q2k0Z4Ov6sXUTwF4kgsmaHn6cCrLHmEDVeOmj11M0HQMMaAn_BEALw_wcB
