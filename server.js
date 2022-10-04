@@ -14,11 +14,6 @@ require('./auth')(passport);
 
 const app = express();
 
-function authenticationMiddleware(req, res, next) {
-    if(req.isAuthenticated()) return next();
-    res.redirect('/login');
-}
-
 
 app.use(logger);
 app.use(express.json());
@@ -32,18 +27,18 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
     cookie: {maxAge: 2*60*1000} //2*60*1000 = 2 minutos 30*60*1000 = 30 minutos
-})); 
+}));
 
 app.use(passport.initialize());
 app.use(passport.session());
 
-// routes
+// Rotas Publicas
+app.use('/', require('./routes/root'));
 app.use('/cadastro', require('./routes/cadastro'));
 app.use('/login', require('./routes/login'));
 
 
 app.use('/clientes', authenticationMiddleware, require('./routes/clientes'));
-app.use('/', authenticationMiddleware, require('./routes/root'));
 
 
 app.all('*', (req, res) => {
@@ -58,5 +53,10 @@ app.all('*', (req, res) => {
 });
 
 app.use(errorHandler);
+
+function authenticationMiddleware(req, res, next) {
+    if(req.isAuthenticated()) return next();
+    res.redirect('/login');
+}
 
 app.listen(PORT, () => console.log(`Node: Server running on port ${PORT}`));

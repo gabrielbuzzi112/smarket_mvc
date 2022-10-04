@@ -584,3 +584,10 @@
 20221004	01:37:42	f19f1d98-22bc-44d4-8612-4fcb891276f7	GET	undefined	/public/img/icon.svg
 20221004	01:39:09	d1b2919d-b672-486d-95ba-a0132b00d534	GET	undefined	/clientes
 20221004	01:39:09	fe9f48eb-48ba-4e08-beae-04363259773c	GET	undefined	/login
+20221004	13:36:20	ba6c07fd-cab1-4ca8-b22b-511ccc3bd040	GET	undefined	/
+20221004	13:36:21	6d89c3e7-91dc-4365-99d0-c62aaf7a1dcd	GET	undefined	/public/img/icon.svg
+20221004	13:36:21	edc6ae57-9a25-4e56-bb1b-e7a58dc9330f	GET	undefined	/favicon.ico
+20221004	13:36:46	9d018b82-965c-43f5-b4ca-0e132abc1fef	GET	undefined	/
+20221004	13:36:46	7771e0cc-8dea-4d1c-8b86-dbfa5ee0d24b	GET	undefined	/public/img/icon.svg
+20221004	13:37:22	850c07d2-fc94-430c-8bda-63f49e481c74	GET	undefined	/
+20221004	13:37:22	50f3beec-af99-48d0-b588-b8425f4e0606	GET	undefined	/public/img/icon.svg
