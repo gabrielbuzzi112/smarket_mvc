@@ -136,3 +136,14 @@ Cannot read properties of undefined (reading 'length')
 20221004	01:23:58	fe44a91c-fb2b-4884-b697-75d81b443036	ReferenceError: Cannot access 'usuario' before initialization
 20221004	01:31:17	24de23a9-eb1b-4293-a191-0626b85a62c9	ReferenceError: email is not defined
 20221004	01:31:23	8f3039be-3f26-4694-aba8-55955cda9d37	ReferenceError: email is not defined
+20221004	23:29:32	2f52fceb-95e6-4051-963d-30b8ec67248d	Error: ENOENT: no such file or directory, open 'C:\Users\Gabriel\Documents\smarket_mvc\public\css\style.css'
+    at C:\Users\Gabriel\Documents\smarket_mvc\views\layout\layout.pug line 11
+20221004	23:30:06	0f2d86a6-dd97-43c1-8b41-55a85c4f8784	Error: ENOENT: no such file or directory, open 'C:\Users\Gabriel\Documents\smarket_mvc\views\public\css\style.css'
+    at C:\Users\Gabriel\Documents\smarket_mvc\views\layout\layout.pug line 11
+20221004	23:30:54	f6928494-e803-4479-8e18-35052f930eba	Error: ENOENT: no such file or directory, open 'C:\Users\Gabriel\Documents\smarket_mvc\views\layout\navbar.pug c:\Users\Gabriel\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\code\electron-sandbox\workbench\workbench.html'
+    at C:\Users\Gabriel\Documents\smarket_mvc\views\layout\layout.pug line 13
+20221005	00:21:37	41d6b957-f2fe-4ba0-a019-5df48f39c8d7	Error: ENOENT: no such file or directory, open './logo.gif'
+20221005	00:22:10	3bd5ba0c-1c65-4b0d-ac4d-4d756394c7a2	Error: ENOENT: no such file or directory, open '../public/img/logo.png'
+20221005	00:23:01	ca3a6812-841c-412b-8ac8-7108e462ac0e	Error: ENOENT: no such file or directory, open '../public/img/logo.png'
+20221005	00:23:13	1cfebc07-10cd-414a-8cab-37cef240ee6f	Error: ENOENT: no such file or directory, open 'C:\Users\Gabriel\Documents\smarket_mvc\routes\public\img\logo.png'
+20221005	00:23:24	9f7b6e6a-49b8-41ee-a476-44f0ced34cbd	Error: ENOENT: no such file or directory, open 'C:\Users\Gabriel\Documents\smarket_mvc\routes\public\img\logo.png'
