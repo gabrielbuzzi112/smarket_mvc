@@ -147,3 +147,26 @@ Cannot read properties of undefined (reading 'length')
 20221005	00:23:01	ca3a6812-841c-412b-8ac8-7108e462ac0e	Error: ENOENT: no such file or directory, open '../public/img/logo.png'
 20221005	00:23:13	1cfebc07-10cd-414a-8cab-37cef240ee6f	Error: ENOENT: no such file or directory, open 'C:\Users\Gabriel\Documents\smarket_mvc\routes\public\img\logo.png'
 20221005	00:23:24	9f7b6e6a-49b8-41ee-a476-44f0ced34cbd	Error: ENOENT: no such file or directory, open 'C:\Users\Gabriel\Documents\smarket_mvc\routes\public\img\logo.png'
+20221005	19:50:36	2c1675de-69eb-4436-84c4-32e3540d1daf	Error: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\layout\navbar.pug:9:1
+    7|       
+    8|               .col-lg-5.col-xl-4.px-0.d-none.d-lg-block(style='background: center center url(https://images.unsplash.com/photo-1533637267520-4dfd6aa7ee93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1268&q=80)no-repeat; background-size: cover;')
+  > 9|       li.nav-item
+-------^
+    10|         a.nav-link.font-weight-bold.text-uppercase(href='') About
+    11|       li.nav-item
+    12|         a.nav-link.font-weight-bold.text-uppercase(href='') Services
+
+Inconsistent indentation. Expecting either 4 or 14 spaces/tabs.
+20221005	22:01:53	f4bacd5e-7368-4296-9793-9e7bdd3e3e03	Error: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\layout\navbar2.pug:6:1
+    4|             img.rounded-5(src="http://localhost:3000/logo" alt='Bootstrap' width='50' height='50')
+    5| 
+  > 6|     button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+-------^
+    7|     span.navbar-toggler-icon
+    8|         #navbarSupportedContent.collapse.navbar-collapse
+    9|             ul.navbar-nav.me-auto.mb-2.mb-lg-0.mx-auto
+
+Inconsistent indentation. Expecting either 2 or 8 spaces/tabs.
+20221005	22:49:21	261422df-3fee-4ac3-a79a-9b41e6eb139a	Error: ENOENT: no such file or directory, open 'C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\public\img\logo2.png'
+20221005	23:54:23	26cfd752-d295-4e19-8e0b-997af13e7ff0	Error: ENOENT: no such file or directory, open 'C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\public\img\logo.jpg'
+20221005	23:54:36	cb9e8609-5e3f-422a-b174-2a774aba86db	Error: ENOENT: no such file or directory, open 'C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\public\img\logo.jpg'

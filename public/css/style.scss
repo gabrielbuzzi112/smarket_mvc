@@ -3,9 +3,10 @@
 @import "../../node_modules/bootstrap/scss/maps";
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/buttons";
 
 $all-colors: map-merge-multiple($blues, $indigos, $purples, $pinks, $reds, $oranges, $yellows, $greens, $teals, $cyans);
-
+/*
 $utilities: map-merge(
   $utilities,
   (
@@ -22,5 +23,13 @@ $utilities: map-merge(
     ),
   )
 );
+*/
+
+@each $color, $value in $all-colors {
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+  }
+
+}
 
 @import "../../node_modules/bootstrap/scss/utilities/api";
