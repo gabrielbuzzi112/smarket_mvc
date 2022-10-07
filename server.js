@@ -36,6 +36,8 @@ app.use(passport.session());
 app.use('/', require('./routes/root'));
 app.use('/cadastro', require('./routes/cadastro'));
 app.use('/login', require('./routes/login'));
+app.use('/logout', require('./routes/logout'));
+
 
 
 app.use('/clientes', authenticationMiddleware, require('./routes/clientes'));

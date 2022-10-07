@@ -299,3 +299,5 @@ Inconsistent indentation. Expecting either 4 or 8 spaces/tabs.
     8|         ul(class="navbar-nav")
 
 Inconsistent indentation. Expecting either 4 or 8 spaces/tabs.
+20221006	23:18:05	5084bc79-6d8b-4d26-b9f2-188e4558d4dd	Error: req#logout requires a callback function
+20221006	23:19:17	f959adcc-701f-415b-a710-f4232e656c6e	Error: req#logout requires a callback function
