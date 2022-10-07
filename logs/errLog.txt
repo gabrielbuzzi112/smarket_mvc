@@ -170,3 +170,132 @@ Inconsistent indentation. Expecting either 2 or 8 spaces/tabs.
 20221005	22:49:21	261422df-3fee-4ac3-a79a-9b41e6eb139a	Error: ENOENT: no such file or directory, open 'C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\public\img\logo2.png'
 20221005	23:54:23	26cfd752-d295-4e19-8e0b-997af13e7ff0	Error: ENOENT: no such file or directory, open 'C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\public\img\logo.jpg'
 20221005	23:54:36	cb9e8609-5e3f-422a-b174-2a774aba86db	Error: ENOENT: no such file or directory, open 'C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\public\img\logo.jpg'
+20221006	20:51:23	f34c833a-59d7-44de-a4cc-da8af07b95d1	Error: ENOENT: no such file or directory, open 'C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\layout\navbar2.pug'
+    at C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\layout\layout.pug line 10
+20221006	20:51:31	482b8301-9f7f-4e3c-bed3-495e6bed0595	Error: ENOENT: no such file or directory, open 'C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\layout\navbar2.pug'
+    at C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\layout\layout.pug line 10
+20221006	21:20:03	2aa2789a-861e-46fa-bb8d-162d073b6d92	Error: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\login.pug:3:1
+
+Only named blocks and mixins can appear at the top level of an extending template
+20221006	21:28:59	30e98f4b-5721-4628-b464-9e5485351b73	Error: ENOENT: no such file or directory, open 'C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\public\css\colors.css'
+    at C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\cliente\layout\layout.pug line 28
+20221006	21:47:48	e85a1c2c-ebb8-4314-ae16-4d54f4a47859	Error: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\cliente\index.pug:6:1
+    4|     .container 
+    5|         each val in [1, 2]
+  > 6|         .row 
+-------^
+    7|             each val in [1, 2, 3]
+    8|                 .col 
+    9|                     .card
+
+expected "indent", but got "newline"
+20221006	21:55:54	c4b33162-9e41-405e-b49c-2f6cc8a2b8c4	Error: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\cliente\index.pug:6:79
+    4|     .container 
+    5|             .row 
+  > 6|                 each mercado in [{"nome": "Caetano", "color": "bg-green-300"},
+-------------------------------------------------------------------------------------^
+    7|                                 {"nome":  "Enxuto", "color": "bg-green-200"},
+    8|                                 {"nome":  "Extra", "color": "bg-green-100"},
+    9|                                 {"nome":  "Zarelli", "color": "bg-red-100"},
+
+Syntax Error: Unexpected token
+20221006	21:57:57	c863e366-d7b0-4431-ab68-4f1f07f23053	Error: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\cliente\index.pug:6:79
+    4|     .container 
+    5|             .row 
+  > 6|                 each mercado in [{"nome": "Caetano", "color": "bg-green-300"},
+-------------------------------------------------------------------------------------^
+    7|                                 {"nome":  "Enxuto", "color": "bg-green-200"},
+    8|                                 {"nome":  "Extra", "color": "bg-green-100"},
+    9|                                 {"nome":  "Zarelli", "color": "bg-red-100"},
+
+Syntax Error: Unexpected token
+20221006	21:58:10	fa93e1a4-3d0c-441a-80be-e0f41fcabfdc	Error: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\cliente\index.pug:6:79
+    4|     .container 
+    5|             .row 
+  > 6|                 each mercado in [{"nome": "Caetano", "color": "bg-green-300"},
+-------------------------------------------------------------------------------------^
+    7|                                 {"nome":  "Enxuto", "color": "bg-green-200"},
+    8|                                 {"nome":  "Extra", "color": "bg-green-100"},
+    9|                                 {"nome":  "Zarelli", "color": "bg-red-100"},
+
+Syntax Error: Unexpected token
+20221006	21:59:43	57c6fe31-329e-4a1f-b925-db8dae4aef4d	Error: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\cliente\index.pug:10:44
+    8|                         .card.mt-3.mb-3(class="!{mercado.color}")
+    9|                             .card-header
+  > 10|                                 = !{mercado.nome}
+---------------------------------------------------^
+    11|                             .card-body
+    12|                                 h5.card-title Special title treatment
+    13|                                 p.card-text With supporting text below as a natural lead-in to additional content.
+
+Syntax Error: Unexpected token
+20221006	22:00:10	d8ef601c-9493-4b72-992f-4a553488c506	Error: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\cliente\index.pug:10:33
+    8|                         .card.mt-3.mb-3(class="!{mercado.color}")
+    9|                             .card-header
+  > 10|                                 !{mercado.nome}
+----------------------------------------^
+    11|                             .card-body
+    12|                                 h5.card-title Special title treatment
+    13|                                 p.card-text With supporting text below as a natural lead-in to additional content.
+
+unexpected text "!{mer"
+20221006	22:00:21	a7dcea86-af91-459a-89b8-de30c85779b0	Error: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\cliente\index.pug:10:33
+    8|                         .card.mt-3.mb-3(class="#{mercado.color}")
+    9|                             .card-header
+  > 10|                                 !{mercado.nome}
+----------------------------------------^
+    11|                             .card-body
+    12|                                 h5.card-title Special title treatment
+    13|                                 p.card-text With supporting text below as a natural lead-in to additional content.
+
+unexpected text "!{mer"
+20221006	22:02:05	cb9c182b-127d-47e8-9641-6266e3bdbb42	Error: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\cliente\index.pug:10:33
+    8|                         .card.mt-3.mb-3#{mercado.color}
+    9|                             .card-header
+  > 10|                                 !{mercado.nome}
+----------------------------------------^
+    11|                             .card-body
+    12|                                 h5.card-title Special title treatment
+    13|                                 p.card-text With supporting text below as a natural lead-in to additional content.
+
+unexpected text "!{mer"
+20221006	22:02:15	5394b32d-fa21-41f2-8198-68f124500f08	Error: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\cliente\index.pug:10:33
+    8|                         .card.mt-3.mb-3
+    9|                             .card-header
+  > 10|                                 !{mercado.nome}
+----------------------------------------^
+    11|                             .card-body
+    12|                                 h5.card-title Special title treatment
+    13|                                 p.card-text With supporting text below as a natural lead-in to additional content.
+
+unexpected text "!{mer"
+20221006	22:02:16	211b9dac-7fd6-4519-9843-085d73a82f4c	Error: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\cliente\index.pug:10:33
+    8|                         .card.mt-3.mb-3
+    9|                             .card-header
+  > 10|                                 !{mercado.nome}
+----------------------------------------^
+    11|                             .card-body
+    12|                                 h5.card-title Special title treatment
+    13|                                 p.card-text With supporting text below as a natural lead-in to additional content.
+
+unexpected text "!{mer"
+20221006	22:38:34	59d79f46-519d-4ffe-83a1-5fe6a35b9a3a	Error: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\cliente\layout\navbar2.pug:5:1
+    3|     a(class="navbar-brand" href="#") 
+    4|         img.rounded-circle(src="http://localhost:3000/logo" alt='Bootstrap' width='50' height='50')
+  > 5|       button(class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation") 
+-------^
+    6|         span(class="navbar-toggler-icon")
+    7|       div(class="collapse navbar-collapse" id="navbarNav")
+    8|         ul(class="navbar-nav")
+
+Inconsistent indentation. Expecting either 4 or 8 spaces/tabs.
+20221006	22:38:37	9b765f3f-5f53-4f42-acda-3f122a0f68af	Error: C:\Users\Gabriel-PC\Documents\smarketProject\smarket_mvc\views\cliente\layout\navbar2.pug:5:1
+    3|     a(class="navbar-brand" href="#") 
+    4|         img.rounded-circle(src="http://localhost:3000/logo" alt='Bootstrap' width='50' height='50')
+  > 5|       button(class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation") 
+-------^
+    6|         span(class="navbar-toggler-icon")
+    7|       div(class="collapse navbar-collapse" id="navbarNav")
+    8|         ul(class="navbar-nav")
+
+Inconsistent indentation. Expecting either 4 or 8 spaces/tabs.

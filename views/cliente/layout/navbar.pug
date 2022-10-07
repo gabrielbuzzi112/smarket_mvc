@@ -1,0 +1,28 @@
+nav.navbar.bg-light.fixed-top.bg-orange-400
+  .container-fluid
+    a(class="navbar-brand" href="http://localhost:3000/clientes") 
+        img.rounded-circle(src="http://localhost:3000/logo" alt='Bootstrap' width='50' height='50')
+    button.navbar-toggler(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasNavbar' aria-controls='offcanvasNavbar')
+      span.navbar-toggler-icon
+    #offcanvasNavbar.offcanvas.offcanvas-end(tabindex='-1' aria-labelledby='offcanvasNavbarLabel').bg-orange-200
+      .offcanvas-header
+        h5#offcanvasNavbarLabel.offcanvas-title Olá, Gabriel!
+        button.btn-close(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+      .offcanvas-body
+        ul.navbar-nav.justify-content-end.flex-grow-1.pe-3
+          li.nav-item
+            a.nav-link.active(aria-current='page' href='#') Minha Conta
+          li.nav-item
+            a.nav-link(href='#') Minhas Listas
+          li.nav-item.dropdown
+            a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+              | Dropdown
+            ul.dropdown-menu
+              li
+                a.dropdown-item(href='#') Action
+              li
+                a.dropdown-item(href='#') Another action
+              li
+                hr.dropdown-divider
+              li
+                a.dropdown-item(href='#') Something else here

@@ -1,16 +1,21 @@
-//extends layout/layout.pug
+extends layout/layout.pug
 
 block content 
-    
-    if mensagem!=""
-        div.alert.alert-success= mensagem
-
-    form(action="http://localhost:3000/login" method="post")
-        .mb-3
-            label.form-label(for='email') Email
-            input#email.form-control(type='email' name="email")
-        .mb-3
-            label.form-label(for='senha') Senha
-            input#senha.form-control(type='password' name="senha")
-        div.d-grid
-            button.btn.btn-success(type='submit') Entrar
+    .container.mt-5.bg-green-800.rounded-4.text-light.mb-5
+        .row
+            .col-sm-12.col-md-6.offset-md-3.mt-5.mb-5
+                if mensagem!=""
+                    div.alert.alert-success= mensagem
+                h1.text-center Acesse sua conta
+                form(action="http://localhost:3000/login" method="post")
+                    .mb-3
+                        label.form-label(for='email') Email
+                        input#email.form-control(type='email' name="email")
+                    .mb-3
+                        label.form-label(for='senha') Senha
+                        input#senha.form-control(type='password' name="senha")
+                    div.d-grid
+                        button.btn.btn-success(type='submit') Entrar
+        .row
+            .col-sm-12.col-md-6.offset-md-3.mt-3.mb-5
+                img.rounded-4(src="http://localhost:3000/logo" width='100%' height='100%')

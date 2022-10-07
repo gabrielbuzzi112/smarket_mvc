@@ -1,16 +1,18 @@
-nav.navbar.navbar-expand-lg.navbar-light.bg-white.py-3.shadow-sm
-  a.navbar-brand.font-weight-bold.d-block.d-lg-none(href='#') iSmarket
-  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarContent' aria-controls='navbarContent' aria-expanded='false' aria-label='Toggle navigation')
-    span.navbar-toggler-icon
+nav.navbar.navbar-expand-lg.bg-light.text-uppercase.py-3.shadow-sm
+  .container-fluid
+    a.navbar-brand(href='#')
+        img.rounded-5(src="http://localhost:3000/logo" alt='Bootstrap' width='50' height='50')
 
-  div#navbarContent.collapse.navbar-collapse
-    ul.navbar-nav.mx-auto
-        li.nav-item
-          a.nav-link.font-weight-bold.text-uppercase(href='') Sobre
-        li.nav-item
-          a.nav-link.font-weight-bold.text-uppercase(href='') Serviços
-        li.nav-item
-          a.nav-link.font-weight-bold.text-uppercase(href='') Cadastre-se
-        li.nav-item
-          a.nav-link.font-weight-bold.text-uppercase(href='') Entrar
-
+    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.me-auto.mb-2.mb-lg-0
+            li.nav-item.my-2
+                a.nav-link(href='http://localhost:3000/#home') Home
+            li.nav-item.my-2
+                a.nav-link(href='http://localhost:3000/#sobre') Sobre
+        ul.navbar-nav.mr-auto.mb-2.mb-lg-0    
+            li.nav-item.me-3.my-2
+                a.nav-link.btn.btn-outline-orange-500.font-weight-bold(href="http://localhost:3000/cadastro") Cadastre-se
+            li.nav-item.me-3.my-2
+                a.nav-link.btn.btn-orange-500.font-weight-bold(href="http://localhost:3000/login") Entrar

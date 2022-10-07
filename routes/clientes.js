@@ -8,7 +8,7 @@ router.route('/')
         sequelize.sync().then(() => {
             Usuario.findAll().then(result => {
                 let dados = JSON.parse(JSON.stringify(result));
-                res.render('../views/cliente/listar.pug', {clientes: dados});
+                res.render('../views/cliente/index.pug', {clientes: dados});
             }).catch((error) => {
                 res.send('Failed to retrieve data : ', error);
             });

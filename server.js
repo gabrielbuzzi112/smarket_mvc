@@ -26,7 +26,7 @@ app.use(session({
     secret: '123', //Colocar em variavel de ambiente
     resave: false,
     saveUninitialized: false,
-    cookie: {maxAge: 2*60*1000} //2*60*1000 = 2 minutos 30*60*1000 = 30 minutos
+    cookie: {maxAge: 15*60*1000} //2*60*1000 = 2 minutos 30*60*1000 = 30 minutos
 }));
 
 app.use(passport.initialize());

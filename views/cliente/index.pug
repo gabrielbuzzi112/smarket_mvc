@@ -1,0 +1,22 @@
+extends layout/layout.pug
+
+block content 
+    .container
+            .row
+                each mercado in [{"nome": "Caetano", "color": "green"},{"nome":  "Enxuto", "color": "green"},{"nome":  "Extra", "color": "green"},{"nome":  "Zarelli", "color": "red"},{"nome":  "Carrefour", "color": "red"}]
+                    .col-md-4.col-sm-12
+                        .card.mt-3.mb-3
+                            if mercado.color=='green'
+                                .card-header.bg-green-400
+                                    h3.my-auto.float-end
+                                        = mercado.nome
+                            else
+                                .card-header.bg-red-400
+                                    h3.my-auto.float-end
+                                        = mercado.nome
+                            .card-body.bg-orange-100
+                                h5.card-title Special title treatment
+                                p.card-text With supporting text below as a natural lead-in to additional content.
+                                a.btn.btn-outline-orange-600.d-grid(href='#') Avaliar Itens
+
+        
