@@ -7,7 +7,7 @@ router.get('^/$|/index(.html)?', (req, res) => {
     res.render('index.pug');
 });
 router.get('/logo', (req, res) => {
-    var img = fs.readFileSync(path.join(__dirname, '../public/img/logo2.jpg'));
+    var img = fs.readFileSync(path.join(__dirname, '../public/img/logo.png'));
     res.writeHead(200, {'Content-Type': 'image/gif' });
     res.end(img, 'binary');
 });

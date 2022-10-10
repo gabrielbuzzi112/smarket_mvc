@@ -373,6 +373,11 @@
     background-color: #332701 !important;
   }
   
+  .bg-verde {
+    --bs-bg-opacity: 1;
+    background-color: #c7e15f !important;
+  }
+
   .bg-green-100 {
     --bs-bg-opacity: 1;
     background-color: #d1e7dd !important;

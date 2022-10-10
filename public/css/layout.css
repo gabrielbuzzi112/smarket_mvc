@@ -17,12 +17,14 @@
 /*#fd7e14*/
 body {
     background: #fecba1;
-    background: -webkit-linear-gradient(to right, #fecba1, #fd7d1491);
-    background: linear-gradient(to right, #fecba1, #fd7d1491);
+    background: -webkit-linear-gradient(to right, #ff9843, #ff862f);
+    background: linear-gradient(to right, #ff9843, #ff862f);
     min-height: 100vh;
     font-style: normal; 
     font-family: "Verdana" 
 }
+
+
 
 .text-uppercase {
     letter-spacing: 0.08em;
