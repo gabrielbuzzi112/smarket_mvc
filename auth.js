@@ -1,6 +1,6 @@
 var bcrypt = require('bcryptjs');
 const LocalStrategy = require("passport-local").Strategy;
-const {sequelize, DataTypes, Usuario} = require('./models/usuarios.model.js');
+const {sequelize, DataTypes, Usuario} = require('./models/usuario.model.js');
 
 
 module.exports = (passport)=>{

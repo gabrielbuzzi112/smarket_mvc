@@ -61,4 +61,28 @@ function authenticationMiddleware(req, res, next) {
     res.redirect('/login');
 }
 
+//Teste da ORM
+
+const db = require("./models/associations");
+const {sequelize, DataTypes} = require('./config/db.js');
+const UsuarioController = require("./controllers/usuario.controller");
+const ClienteController = require("./controllers/cliente.controller");
+const MercadoController = require("./controllers/mercado.controller");
+const ProdutoController = require("./controllers/produto.controller");
+const EstoqueController = require("./controllers/estoque.controller");
+const ListaController = require("./controllers/lista.controller");
+
+
+const run = async () => {
+
+};
+
+// db.sequelize.sync();
+sequelize.sync({ force: true }).then(() => {
+  console.log("Drop and re-sync db.");
+  run();
+});
+
+//FIM do teste da ORM
+
 app.listen(PORT, () => console.log(`Node: Server running on port ${PORT}`));

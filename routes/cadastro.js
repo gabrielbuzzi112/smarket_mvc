@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
-const {sequelize, DataTypes, Usuario} = require('../models/usuarios.model.js');
+const {sequelize, DataTypes, Usuario} = require('../models/usuario.model.js');
 
 router.route('/')
     .get((req, res) => {

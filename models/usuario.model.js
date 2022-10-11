@@ -15,12 +15,6 @@ const Usuario = sequelize.define("usuarios", {
    }
 });
 
-sequelize.sync().then(() => {
-   console.log('Tabela de usuarios criada com sucesso!');
-}).catch((error) => {
-   console.error('Unable to create table : ', error);
-});
-
 module.exports = {
    sequelize,
    Usuario,
