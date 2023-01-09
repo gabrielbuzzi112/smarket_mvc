@@ -1,0 +1,87 @@
+[T001] - Tela de Cadastro de Usuários
+
+    Tela de cadastro inicial de usuário que é exibida antes da seleção da opção cadastral.
+    Formulárario:   Nome, Email, Senha
+
+[T002] - Tela de Opção Cadastral
+
+    Tela pós cadastro inicial onde o usuário deve selecionar como deseja utilizar o sistema, como um CLIENTE ou como um MERCADO.
+
+[T003] - Tela de Finalização do cadastro como CLIENTE
+
+    Caso o usuário selecione usar a aplicação como CLIENTE na tela T002.
+    Formulário: Endereço, Telefone, CPF
+    Ao finalizar o cadastro enviar email de confirmação
+
+[T004] - Tela de finalização do cadastro como MERCADO
+
+    Caso o usuário resolva usar a applicação como MERCADO
+    Formulário: Endereço do Mercado (Unidade Principal), Telefone, Número estimado de itens cadastrados
+    Ao finalizar o cadastro enviar email de confirmação
+
+[T005] - Tela de Login
+
+    Tela de login universal pelo usuário.
+    Após o login a aplicação deve identificar se o usuário é CLIENTE ou MERCADO.
+    Caso não seja o primeiro acesso: Reenderizar a interfáce de CLIENTE ou de MERCADO
+    Caso seja o primeiro acesso: 
+        CLIENTE: Reenderizar a tela de cadastro da primeira lista de compras.
+        MERCADO: Reenderizar a tela de cadastro do primeiro estoque.
+
+[T007] - Tela de Visualização e Revisão da proposta de Mercado
+
+    Tela em que o mercado pode ver o estado da sua proposta de utilização do sistema e caso seja necessário revisá-la.
+
+[T006] - Cadastro da primeira lista de compras
+    
+    Formulário: Nome, Radio: Sugestão da Aplicação ou Montagem manual.
+    Independente da escolha do usuário no Radio anterior ao enviar este formulário deve ser cadastrada a lista de compras de compras no banco e o cliente redirecionado à tela de edição
+    Caso a opção de sugestão da aplicação tenha sido escolhida a tela de edição da lista de compras deve ser carregada com os produtos sugeridos.
+    Caso contrário deve ser carregada em branco.
+
+[T008] - Tela de edição da lista de compras
+    
+    A tela deve conter uma barra de busca na parte superior com uma busca dropdown que ao clicar em um item ele ja é adicionado na lista com um seletor de quantidade.
+    Ao diminuir a quantidade de determinado produto para zero o sistema deve abrir uma caixa de dialogo perguntando se o cliente deseja remover aquele produto.
+    Um botão para salvar a lista que ao ser clicado deve regitrar na tabela de itens da lista no banco.
+
+[T009] - Cadastro do primeiro estoque do mercado
+
+    Equivalente a T006.
+    Formulário: Nome, Radio: Mesmo endereço da sede? Sim. Não: Fornecer o endereço.
+    O primeiro estoque deve ser identificado como estoque pricipal.
+
+[T010] - Tela de adição de itens no estoque
+
+    Equivalente a T008. (Ao inves da quantidade desejada, registrar a quantidade em estoque).
+    Registrar o preço de cada produto.
+    Como na tela T008, permite apenas a adição de produtos que já estejam cadastrados no sistema.
+
+[T011] - Tela Principal da Área do Cliente
+
+    Visualização dos mercados em blocos no formato de feed.
+    Link para a edição da lista de compras atualmente selecionado como principal.
+    Link para o cadastro de uma nova lista de compras.
+    Link para a seleção de lista de compras principal dentre as registradas [M001].
+
+[T012] - Tela Principal da Área do Mercado
+
+    Visualização de dados estatíscos relacionado a aparição do mercado nos rankings dos clientes.
+    Comparativos de preços entre os outros mercados.
+    Link para edição de produtos no estoque atualmente selecionado como principal.
+    Link para o cadastro de um novo estoque.
+    Link para a seleção do estoque principal dentre os cadastrados pelo mercado [M002]. 
+    Link para a tela de solicitação de adição de um novo produto [T013].
+
+[T013] - Tela de Solicitação de adição de um novo produto no sistema.
+
+    Formulário: Nome do produto, ...
+
+[M001] - Modal de seleção da lista de compras principal do cliente.
+
+    Deve exibir todas as lista do cliente com um botão de seleção em cada uma delas e um botão de salvar a selecionada como a nova principal.
+
+[M002] - Modal de seleção de estoque principal do mercado.
+
+    Deve exibir todas as lista do mercado com um botão de seleção em cada um deles e um botão de salvar o selecionado como o novo principal.
+
