@@ -6,7 +6,7 @@ const sequelize = new Sequelize(
    '',
     {
       host: 'localhost',
-      dialect: 'mariadb'
+      dialect: 'mysql'
     }
   );
 
@@ -15,6 +15,8 @@ sequelize.authenticate().then(() => {
 }).catch((error) => {
    console.error('Unable to connect to the database: ', error);
 });
+
+sequelize.sync({ alter: true })
 
 module.exports = {
     sequelize,

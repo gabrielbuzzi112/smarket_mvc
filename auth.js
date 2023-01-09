@@ -23,7 +23,6 @@ module.exports = (passport)=>{
     });
 
     passport.deserializeUser((id, done)=>{
-        
             const usuario = Usuario.findOne({ where: { id: id } }).then(result=> {
                 done(null, result.dataValues);
             }).catch((error) => {
