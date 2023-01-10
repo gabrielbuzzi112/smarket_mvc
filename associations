@@ -1,0 +1,16 @@
+Source.assocFunc(target)
+
+belongsTo 
+    Foreing Key to the source and Singular Methods to the source.
+
+hasOne 
+    Foreing key to the target and Singular Methods to the source.
+
+hasMany 
+    Foreing key to the target Plural Methods to the source.
+
+belongsToMany 
+    New table with the foreing keys and plural methods to the source.
+
+
+
